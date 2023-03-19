@@ -9,6 +9,7 @@ import tenor
 # import redisForBot
 import quizfromjson
 import youtubeapi
+from keepAlive import keep_alive
 
 TOKEN = os.environ['DISCORD_TOKEN']
 
@@ -526,4 +527,5 @@ async def word_wolf(author):
 # taskの起動
 task_onehour.start()
 # Botの起動とDiscordサーバーへの接続
+keep_alive()
 client.run(TOKEN)
