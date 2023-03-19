@@ -1,0 +1,4 @@
+discord.py[voice]
+requests
+redis
+google-api-python-client
